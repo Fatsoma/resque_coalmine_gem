@@ -7,15 +7,14 @@ describe Resque::Failure::Coalmine do
         config.signature = signature
       end
     end
-    subject { ::Coalmine.config }
-    it "sets signature" do
+    it 'sets signature to "my_secret_signature"'  do
       expect(Coalmine.config.signature).to eql signature
     end
   end
 
   describe "#count" do
     let(:failed) { 0 }
-    before  { Resque::Stat.expects(:[]).with(:failed).returns(failed) }
+    before { Resque::Stat.expects(:[]).with(:failed).returns(failed) }
     it 'should be zero' do
       expect(Resque::Failure::Coalmine.count).to eq 0
     end
