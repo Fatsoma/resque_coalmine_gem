@@ -1,6 +1,6 @@
-# ResqueCoalmine
+# Resque Coalmine
 
-Sends exceptions from resque to coalmineapp.com
+Resque failure backend that sends exceptions to coalmineapp.com
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-   $ bundle
+    $ bundle
 
 Or install it yourself as:
 
@@ -23,6 +23,19 @@ Or install it yourself as:
     end
 
     Resque::Failure.backend = Resque::Failure::Coalmine
+    
+If you are already using coalmineapp.com gem, you just need
+
+    Resque::Failure.backend = Resque::Failure::Coalmine
+   
+## Notes
+
+In development mode you need to configure Coalmine to send exceptions, default is `['production', 'staging']`
+
+    Coalmine.configure do |config|
+        ....
+        config.enabled_environments = ['development']
+    end
 
 ## Contributing
 
