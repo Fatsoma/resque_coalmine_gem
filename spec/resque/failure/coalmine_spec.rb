@@ -37,7 +37,7 @@ describe Resque::Failure::Coalmine do
 
     describe Coalmine do
       subject { Coalmine.custom_variables }
-      it 'has custom variables set to "Object", "2012"' do
+      it 'has custom variables set "payload_class: Object", "payload_args: 2012"' do
         expect(subject[:payload_class]).to eq payload['class']
         expect(subject[:payload_args]).to eq payload['args'].inspect
       end
