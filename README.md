@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+   $ bundle
 
 Or install it yourself as:
 
@@ -18,13 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-'''
-Resque::Failure::Coalmine.configure do |config|
-  config.signature = 'my_secret_signature'
-end
+    Resque::Failure::Coalmine.configure do |config|
+      config.signature = 'my_secret_signature'
+    end
 
-Resque::Failure.backend = Resque::Failure::Coalmine
-'''
+    Resque::Failure.backend = Resque::Failure::Coalmine
 
 ## Contributing
 
