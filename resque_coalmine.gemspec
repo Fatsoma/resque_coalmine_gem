@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/resque_coalmine/version', __FILE__)
+require File.expand_path('../lib/coalmine/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Luqman Amjad"]
@@ -16,4 +16,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency('coalmine', '0.5.3')
   gem.add_dependency('resque', '1.23.0')
+  gem.add_dependency('builder', '3.0.4')
 end
