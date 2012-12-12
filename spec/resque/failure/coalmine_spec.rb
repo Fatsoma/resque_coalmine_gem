@@ -16,7 +16,7 @@ describe Resque::Failure::Coalmine do
     let(:failed) { 0 }
     before { Resque::Stat.expects(:[]).with(:failed).returns(failed) }
     it 'should be zero' do
-      expect(Resque::Failure::Coalmine.count).to eq 0
+      expect(Resque::Failure::Coalmine.count).to eq failed
     end
   end
 
