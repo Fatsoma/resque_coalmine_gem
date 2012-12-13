@@ -28,6 +28,8 @@ If you are already using coalmineapp.com gem, you just need
 
     Resque::Failure.backend = Resque::Failure::Coalmine
 
+If you've not yet configured Coalmine in your project, visit the project page for installation instructions.
+
 ## Notes
 
 In development mode you need to configure Coalmine to send exceptions, default is `['production', 'staging']`
