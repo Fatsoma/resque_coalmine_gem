@@ -1,6 +1,6 @@
 # Resque Coalmine
 
-Resque failure backend that sends exceptions to coalmineapp.com
+Resque failure backend that sends exceptions to [coalmineapp.com](http://coalmineapp.com).
 
 ## Installation
 
