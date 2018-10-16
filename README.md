@@ -1,3 +1,5 @@
+**Please note, this gem is no longer maintained**
+
 # Resque Coalmine
 
 Resque failure backend that sends exceptions to [coalmineapp.com](http://coalmineapp.com).
